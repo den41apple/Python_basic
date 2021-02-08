@@ -38,9 +38,9 @@
 # hours = seconds_input // 60 // 60
 #
 # #   Переводим в минуты
-# minutes = seconds_input // 60
-# while minutes > 60:
-#     minutes = minutes - 60
+# minutes = (seconds_input % 3600) // 60
+# # while minutes > 60:
+# #     minutes = minutes - 60
 #
 # #   Переводим в секунды
 # seconds = seconds_input - hours * 60 - minutes * 60
@@ -48,7 +48,7 @@
 #     seconds = seconds - 60
 #
 # #   Выводим на экран в правильном формате
-# print(f'Время: {hours:0{2}}:{minutes:0{2}}:{seconds:0{2}}')
+# print(f'Время: {hours:0{2}}:{minutes:0{2}.0f}:{seconds:0{2}}')
 
 
 # #   3. Узнайте у пользователя число n.
