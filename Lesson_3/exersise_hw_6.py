@@ -25,3 +25,4 @@ def  int_func(text):
     return text
 
 print(int_func('Привет, как твои дела?'))
+#
