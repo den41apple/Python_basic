@@ -8,8 +8,9 @@ def dev_func(a, b):
     try:
         result = a / b
         return result
-    except ZeroDivisionError:
+    except ZeroDivisionError as err:
         print('Питон грустит :( Ты поделил на ноль, не дели так больше')
+        print(f'Ошибка: {err}')
 
 
 print(dev_func(a=float(input('Введите числитель число: ')),

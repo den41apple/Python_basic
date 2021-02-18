@@ -17,8 +17,9 @@ def my_func():
         for i in range(len(some_list)):
             try:
                 result += int(some_list[i])
-            except ValueError:
+            except ValueError as err:
                 print(f'Введен спецсимвол \nРезультат: {result}')
+                print(f'Ошибка {err}')
                 return False
 
         print(f'Результат: {result}')
