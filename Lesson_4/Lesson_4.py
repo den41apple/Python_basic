@@ -68,16 +68,16 @@
 # print(list((x for x in range(10))))
 # l = [x for x in range(100_000_000)]  # Для красоты можно писать 000_000
 # Генератор - частный случай генератора
-# def my_range(a):
-#     print('start')
-#     cnt = 0
-#     while cnt < a:
-#         yield cnt # Подразумевает  что возвращает обьект генератора и не завершает функцию в отличии от return
-#         cnt += 1
-#
-# a = my_range(100)
-# for el in a:
-#     print(el)
+def my_range(a):
+    print('start')
+    cnt = 0
+    while cnt < a:
+        yield cnt # Подразумевает  что возвращает обьект генератора и не завершает функцию в отличии от return
+        cnt += 1
+
+a = my_range(100)
+for el in a:
+    print(el)
 #
 # next(a) # передаем generator object
 # next(a) # а второй продолжает раоту после yield
