@@ -31,9 +31,9 @@
 #         print(f'Письмо на почту {email} отправлено')
 #
 # # если запуск из модуля
-# # send_emails('lol@mail.ru', 'asda@mail.ru')
+# send_emails('lol@mail.ru', 'asda@mail.ru')
 # send_emails(*argv[1:]) # хватает из консоли, ток нужно начинать со второго элемента
-# send_emails(**'dsf')
+# # send_emails(**'dsf')
 
 
 '''Генераторы списков'''
@@ -56,7 +56,7 @@
 #
 # l1 = [(1, 'test'), (2, 'some'), (3, 'blabla')]
 # print({k: v for k, v in l1})   #  РАССМОТРЕТЬ ТАКУЮ КОНСРУКЦИЮ, КАКИЕ ДАННЫЕ ПРИХОДЯТ В ПЕРЕМЕННЫХ ПРИ ИТЕРИРОВАНЫЕ
-# КАК Я ПОНЯЛ ТАКАЯ ШТУКА ПРИНИМАЕТ ПОЗИЦИОННО КОРТЕЖ
+# # КАК Я ПОНЯЛ ТАКАЯ ШТУКА ПРИНИМАЕТ ПОЗИЦИОННО КОРТЕЖ
 
 
 '''Импорт файлов'''
@@ -65,7 +65,7 @@
 # if __name__ == '__main__':
 
 '''НАСТОЯЩИЕ ПОЛНОЦЕННЫЕ ГЕНЕРАТОРЫ'''
-print(list((x for x in range(10))))
+# print(list((x for x in range(10))))
 # l = [x for x in range(100_000_000)]  # Для красоты можно писать 000_000
 # Генератор - частный случай генератора
 # def my_range(a):
@@ -107,3 +107,28 @@ a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # from functools import count, cycle
 # for x in count():
 #     print(x)
+#
+# from functools import partial
+#
+# def summa(*args, x=2, y=3):
+#     ag = x + y
+#     print(args)
+#     return ag
+#
+# l1 = partial(summa(43), '1', '2')
+
+
+
+# # Для получения точности при дробных числах
+# from decimal import Decimal
+#
+# print((Decimal('0.1') + Decimal('0.1') + Decimal('0.1')) - Decimal('0.3'))
+
+
+#
+# # Считать количество ссылок на обьект
+#
+# from sys import getrefcount
+#
+# print(getrefcount(a))
+
