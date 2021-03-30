@@ -41,8 +41,8 @@ True or False = True
 # print(int(bin(8), 2))
 # print(int(bin(8), 2))
 # a = hex(14)
-# b = oct(14)
-# print(a, b)
+# y = oct(14)
+# print(a, y)
 # a_d = int('0100', 2)
 # print(a_d)
 # print(a_d)
@@ -68,8 +68,8 @@ True or False = True
 БАЙТЫ И BYTEARRAY.
 ПЕРВЫЕ НЕИЗМЕНЯЕМЫЕ, ВТОРЫЕ - ДА
 БОЛЬШЕ ИНФО - https://pythonworld.ru/tipy-dannyx-v-python/bajty-bytes-i-bytearray.html"""
-# b = "Пример".encode("UTF-8")
-# print(b)
+# y = "Пример".encode("UTF-8")
+# print(y)
 # print(chr(123), chr(124), chr(125))  # берем символ из таблицы ASCII
 # print(ord("{"), ord("|"), ord("}"))  # получаем порядок числа по таблице ASCII
 # print("123"  "adfsadfa")
@@ -172,9 +172,9 @@ l3 = ['t', 'e', 's', 't']
 # КОРТЕЖИ - НЕИЗМЕНЯЕМЫЕ
 # ПОДРОБНЕЕ - https://pythonworld.ru/tipy-dannyx-v-python/spiski-list-funkcii-i-metody-spiskov.html"""
 # a = 1
-# b = 2
-# a, b = b, a
-# print(a, b)
+# y = 2
+# a, y = y, a
+# print(a, y)
 #
 # t = ([1, 2], 3, 4)
 # t[0][0] = 'dfdsfgdfg'
@@ -195,8 +195,8 @@ l3 = ['t', 'e', 's', 't']
 # l1 = [1, 2, 3]
 # l2 = [1, 2, 3]
 # a = {1, 2, 3, 4, 5, 5, 5, 5}
-# b = {'s', 'd', 'e'}
-# print(a.update(b))
+# y = {'s', 'd', 'e'}
+# print(a.update(y))
 # s = set()  # пустое множество! ТАК И ТОЛЬКО ТАК! {} - это пустой словарь!
 # print(a)
 # # ЗАЧЕМ? ЕСЛИ НУЖНО ДЕРЖАТЬ УНИКАЛЬНЫЕ ЭЛЕМЕНТЫ И НЕ ВАЖЕН ПОРЯДОК
@@ -256,7 +256,7 @@ some_dict = {"name": "Nikolai",
 #
 #
 # a = 1
-# b = 2
+# y = 2
 # ТЕРНАРНЫЙ ОПЕРАТОР
 # if a == 3:
 #     result = 123
